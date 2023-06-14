@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://fonts.googleapis.com/css?family=Raleway"></script>
+    <script src="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"></script>;
+</head>
+
+<body>
+
+    <!--Background-->
+    <div id="particles-js"></div>
+
+    <!--Header-->
+    <header>
+        <a href="javascript:void(0);" onclick="scrollToTopAndRefresh();">
+            <img class="logo" src="assets/images/logo.png">
+        </a>
+        
+        <script>
+          function scrollToTopAndRefresh() {
+            // Scroll to top
+            window.scrollTo(0, 0);
+            // Wait for scrolling animation to finish and then refresh
+            setTimeout(() => {
+              location.reload();
+            }, 500); // You can adjust this delay as needed
+          }
+        </script>
+
+        <nav>
+            <div class="navigation-bar">
+                <a href="#">ABOUT</a>
+                <a href="#edex">EDUCATION AND EXPERIENCE</a>
+                <a href="#projects">PERSONAL PROJECTS</a>
+                <a>EXTRA</a>
+            </div>
+        </nav>
+        <div class="icons">
+            <a href="https://github.com/mehradhpr">
+                <img class="github-icon" src="assets/icons/github.png">
+            </a>
+
+            <a href="https://www.linkedin.com/in/mehradhassanp/">
+                <img class="linkedin-icon" src="assets/icons/linkedin.png">
+            </a>
+        </div>
+        
+    </header>
+
+    <main id="about">
+        <!--About-->
+        <section class="about">
+            <div class="flname">
+                <p>Hey, I am Mehrad Hassanpour</p>
+            </div>
+            <p class="info">
+                An accomplished Computer Science student offering strong skills in full stack software development,
+                backed by extensive project experience.
+                Delivering exceptional innovation to your team.
+            <p>
+        </section>
+
+        <!--Education and Experience-->
+        <section id="edex" class="edex">
+            <p class="edex-t fade">
+                Education and Experience
+            </p>
+
+            <div class="inner-box fade">
+                <p class="ex-ta-t">Teaching Assistant Leader</p>
+                <p>University of Saskatchewan | from May to August 2023</p>
+                <P>Course CMPT214: Programming Principles and Practice taught by professor Malcomn Todd </P>
+                <p>Concepts range from C programming, Bash command line and Linux operating system</p>
+                <P>Leadership and Effective Communication Skills</P>
+            </div>
+
+            <div class="inner-box fade">
+                <p class="ed-u-t">Computer Science. Bachelor of Science Four-year</p>
+                <p>University of Saskatchewan | Canada</p>
+                <p>Grade Point Average of A</p>
+                <p>Senior Year</p>
+                <figure><img class="u-p" src="assets/images/image11.jpg" </figure>
+            </div>
+
+            <div class="inner-box fade">
+                <p class="ed-c-t">IBM | Introduction to SQL</p>
+                <p>Verified Certificate by edx.org</p>
+                <p>Relational Databases and IBM Cloud</p>
+                <p>Completed by December 30, 2022</p>
+                <figure><img class="ibm-p" src="assets/images/IBM.jpg"></figure>
+            </div>
+        </section>
+
+        <!--Projects-->
+        <section id="projects" class="projects">
+            <p class="projects-t fade">
+                Personal Projects
+            </p>
+
+            <div class="inner-box fade">
+                <p class="habitize-t">Habitize</p>
+                <p>Helps building good habits and breaking the bad ones</p>
+                <p>Utilizing a novel and scientific approach backed by science</p>
+                <p>Available for iOS</p>
+            </div>
+
+            <div class="inner-box fade">
+                <p class="PostSphere-t" style="color: rgb(0, 145, 255); font-size: 35px;
+                    padding-bottom: 1%;">PostSphere</p>
+                <p>A full-stack web-based platform for creating channels and engaging in real-time
+                    discussions.
+                </p>
+                <p>Built with Node.js, React, MySQL, and utilizing RESTful principles.</p>
+                <p>it offers a responsive, dynamic, and user-friendly experience.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>This website has been meticulously crafted and brought to life by Mehrad Hassanpour, based in Saskatoon, Canada.</p>
+    </footer>
+
+
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/scroll.js"></script>
+
+
+</body>
+
+</html>
