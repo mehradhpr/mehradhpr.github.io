@@ -1,0 +1,109 @@
+@import "header.css";
+@import "footer.css";
+@import "about.css";
+
+:root {
+    --main-color: rgb(199, 199, 199);
+    --secondary-color: rgb(255, 255, 255);
+    --background-color: #000000;
+    --accent-color: rgb(0, 145, 255);
+    --gradient: linear-gradient(to right, var(--accent-color), var(--background-color));
+    --fs-large: 50px;
+    --fs-medium: 35px;
+    --fs-small: 25px;
+    --fs-xsmall: 21px;
+    --fs-xxlarge: 60px;
+    --opacity-high: 0.999;
+    --opacity-medium: 0.9;
+    --opacity-low: 0.75;
+}
+
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    color: var(--main-color);
+    font: 20px Raleway;
+    font-size: var(--fs-small);
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+main {
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+    pointer-events: none;
+}
+
+/* Education and Experience --------------------- */
+
+.projects {
+    margin-bottom: 50%;
+}
+
+.edex-t,
+.projects-t {
+    padding-top: 5%;
+    padding-left: 5%;
+    font-size: 50px;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.ed-u-t,
+.ed-c-t,
+.ex-ta-t,
+.postSphere-t,
+.habitize-t {
+    color: var(--accent-color);
+    font-size: 35px;
+    padding-bottom: 2%;
+}
+
+.inner-box {
+    background: var(--background-color);
+    padding: 1rem;
+    margin: 1rem;
+    max-width: fit-content;
+    text-align: left;
+    border-image: linear-gradient(to right, var(--accent-color), var(--background-color)) 30;
+    border-width: 4px;
+    border-style: solid;
+    display: inline-block;
+}
+
+.ibm-p {
+    margin-top: 10px;
+    max-width: 400px;
+    max-height: min-content;
+}
+
+.u-p {
+    margin-top: 20px;
+    max-width: 750px;
+    max-height: min-content;
+}
+
+#particles-js {
+    background-color: var(--background-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+
+.fade {
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.disable-scroll {
+    overflow: hidden;
+    height: 100%;
+}
