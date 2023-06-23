@@ -12,7 +12,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    max-height: 40px;
+    min-height: 40px;
 }
 
 /* Navigation Bar ------------------------------------- */
