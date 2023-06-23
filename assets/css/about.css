@@ -39,7 +39,7 @@
     margin: 0 auto;
     border-right: 2px solid var(--secondary-color);
     color: var(--accent-color);
-    font-size: 5vw;
+    font-size: 75px;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;

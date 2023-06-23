@@ -15,7 +15,7 @@ window.onload = function () {
 
         setTimeout(function () {
             document.body.classList.remove('disable-scroll');
-        }, 7000); // Time is in milliseconds (so 7000 ms is 11 seconds)
+        }, 0); // Time is in milliseconds (so 7000 ms is 11 seconds)
     }
 
 };
@@ -37,6 +37,28 @@ window.addEventListener("scroll", function() {
             opacity = 0;
         }
         element.style.opacity = opacity;
-    });
+    })
 });
 
+// Function to check if the element is in the middle of the screen
+function isElementInMiddle(element) {
+    const rect = element.getBoundingClientRect();
+    const elementY = rect.top + rect.height / 2;
+    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+    const windowY = windowHeight / 2;
+    return Math.abs(elementY - windowY) < 1;
+  }
+
+// Function to handle the scroll event and apply the blue class to the square
+function handleScroll() {
+    const targetElement = document.querySelector('.ex-ta-t');
+    const square = document.querySelector('.square1');
+    if (isElementInMiddle(targetElement)) {
+      square.classList.add('blue');
+    } else {
+      square.classList.remove('blue');
+    }
+  }
+  
+  // Add scroll event listener
+  window.addEventListener('scroll', handleScroll);

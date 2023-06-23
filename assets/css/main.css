@@ -8,11 +8,10 @@
     --background-color: #000000;
     --accent-color: rgb(0, 145, 255);
     --gradient: linear-gradient(to right, var(--accent-color), var(--background-color));
-    --fs-large: 50px;
-    --fs-medium: 35px;
-    --fs-small: 25px;
-    --fs-xsmall: 21px;
-    --fs-xxlarge: 60px;
+    --fx-name: 75px;
+    --fs-largeTitle: 50px;
+    --fs-mediumTitle: 35px;
+    --fs-regular: 25px;
     --opacity-high: 0.999;
     --opacity-medium: 0.9;
     --opacity-low: 0.75;
@@ -24,7 +23,7 @@
     padding: 0;
     color: var(--main-color);
     font: 20px Raleway;
-    font-size: var(--fs-small);
+    font-size: var(--fs-regular);
 }
 
 body {
@@ -48,7 +47,7 @@ main {
 .projects-t {
     padding-top: 5%;
     padding-left: 5%;
-    font-size: 50px;
+    font-size: var(--fs-largeTitle);
     text-align: center;
     color: var(--secondary-color);
 }
@@ -59,7 +58,7 @@ main {
 .postSphere-t,
 .habitize-t {
     color: var(--accent-color);
-    font-size: 35px;
+    font-size: var(--fs-mediumTitle);
     padding-bottom: 2%;
 }
 
@@ -88,7 +87,6 @@ main {
 }
 
 #particles-js {
-    background-color: var(--background-color);
     position: absolute;
     top: 0;
     left: 0;
@@ -111,10 +109,63 @@ main {
 /* Mobile Resizability ------------- */
 
 @media only screen and (max-width: 767px) {
+
     /* Mobile styles for header */
     .header {
-      /* Adjust properties as needed */
-      font-size: 16px;
-      height: auto;
+        /* Adjust properties as needed */
+        font-size: 16px;
+        height: auto;
     }
-  }
+}
+
+
+.sidescroll {
+    z-index: 3;
+    position: fixed;
+    right: 20px;
+    top: 40%;
+}
+
+.square1 {
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    margin-bottom: 10px;
+    border: solid;
+    border-color: var(--accent-color);
+    border-radius: 2px;
+}
+
+.square2 {
+    height: 20px;
+    width: 20px;
+    border-radius: 2px;
+    background-color: black;
+    margin-bottom: 10px;
+    border: solid;
+    border-color: var(--accent-color);
+    border-radius: 2px;
+}
+
+.square3 {
+    height: 20px;
+    width: 20px;
+    border-radius: 2px;
+    background-color: black;
+    margin-bottom: 10px;
+    border: solid;
+    border-color: var(--accent-color);
+    border-radius: 2px;
+
+}
+
+.square4 {
+    height: 20px;
+    width: 20px;
+    border-radius: 2px;
+    background-color: black;
+    margin-bottom: 10px;
+    border: solid;
+    border-color: var(--accent-color);
+    border-radius: 2px;
+}
