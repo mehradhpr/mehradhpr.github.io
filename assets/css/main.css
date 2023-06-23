@@ -107,3 +107,15 @@ main {
     overflow: hidden;
     height: 100%;
 }
+
+/* Mobile Resizability ------------- */
+
+@media only screen and (max-width: 767px) {
+    /* Mobile styles for header */
+    .header {
+      /* Adjust properties as needed */
+      font-size: 16px;
+      height: auto;
+      /* ... */
+    }
+  }
