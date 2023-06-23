@@ -134,7 +134,20 @@ main {
     border: solid;
     border-color: var(--accent-color);
     border-radius: 2px;
-}
+  }
+  
+  .square1.blue {
+    background-color: blue;
+  }
+  
+  @keyframes blueAnimation {
+    from {
+      background-color: black;
+    }
+    to {
+      background-color: blue;
+    }
+  }
 
 .square2 {
     height: 20px;

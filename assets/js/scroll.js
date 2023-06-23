@@ -20,12 +20,12 @@ window.onload = function () {
 
 };
 
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", function () {
     const scrollPosition = window.pageYOffset;
     const windowHeight = window.innerHeight;
     const fadeElements = document.querySelectorAll('.fade');
 
-    fadeElements.forEach(function(element) {
+    fadeElements.forEach(function (element) {
         const elementRect = element.getBoundingClientRect();
         const elementCenterY = elementRect.top + elementRect.height / 2; // center of the element
         const distanceToCenter = Math.abs(windowHeight / 2 - elementCenterY); // distance from center of viewport
@@ -40,25 +40,32 @@ window.addEventListener("scroll", function() {
     })
 });
 
-// Function to check if the element is in the middle of the screen
-function isElementInMiddle(element) {
-    const rect = element.getBoundingClientRect();
-    const elementY = rect.top + rect.height / 2;
-    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-    const windowY = windowHeight / 2;
-    return Math.abs(elementY - windowY) < 1;
-  }
+// Get the element you want to track
+const trackedElement = document.querySelector('.ex-ta-t');
 
-// Function to handle the scroll event and apply the blue class to the square
-function handleScroll() {
-    const targetElement = document.querySelector('.ex-ta-t');
-    const square = document.querySelector('.square1');
-    if (isElementInMiddle(targetElement)) {
-      square.classList.add('blue');
-    } else {
-      square.classList.remove('blue');
-    }
-  }
-  
-  // Add scroll event listener
-  window.addEventListener('scroll', handleScroll);
+// Get the audio element for the click sound
+const clickSound = document.getElementById('clickSound');
+
+// Function to check if the tracked element is in the middle of the screen
+function isElementInMiddle() {
+  const elementRect = trackedElement.getBoundingClientRect();
+  const elementMidY = elementRect.top + elementRect.height / 2;
+  const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+  const viewportMidY = viewportHeight / 2;
+
+  return Math.abs(elementMidY - viewportMidY) < elementRect.height / 2 + 50;
+}
+
+// Function to toggle the blue class on the square
+function toggleBlueClass() {
+  const square = document.querySelector('.square1');
+  square.classList.toggle('blue', isElementInMiddle());
+
+  // Play the click sound
+  clickSound.currentTime = 0; // Reset the audio playback to the beginning
+  clickSound.play();
+}
+
+// Listen for scroll and resize events to check if the element is in the middle
+window.addEventListener('scroll', toggleBlueClass);
+window.addEventListener('resize', toggleBlueClass);
