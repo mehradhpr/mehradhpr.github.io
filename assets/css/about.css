@@ -1,12 +1,21 @@
-.about {
+.about-wrap {
     top: 0px;
     text-align: left;
-    max-width: 70%;
-    margin-top: 20%;
-    margin-left: 9%;
-    margin-bottom: 14%;
     background-color: transparent;
-    margin-bottom: 20%;
+    min-height: 100vh;
+    max-width: 100vw;
+    border-color: aliceblue;
+    border-width: 2px;
+    border: solid;
+}
+
+.about {
+    margin-left: 15%;
+    margin-top: 20%;
+    margin-right: 15%;
+    border-color: aliceblue;
+    border-width: 2px;
+    border: solid;
 }
 
 .about p {
@@ -30,7 +39,7 @@
     margin: 0 auto;
     border-right: 2px solid var(--secondary-color);
     color: var(--accent-color);
-    font-size: 70px;
+    font-size: 5vw;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
