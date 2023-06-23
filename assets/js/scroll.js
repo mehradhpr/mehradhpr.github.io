@@ -9,6 +9,7 @@ window.addEventListener(
     false
 );
 
+// disabling the scroll when the website refreshes
 window.onload = function () {
     if (window.pageYOffset === 0) {
         document.body.classList.add('disable-scroll');
@@ -20,6 +21,7 @@ window.onload = function () {
 
 };
 
+// fade animation while scrolling
 window.addEventListener("scroll", function () {
     const scrollPosition = window.pageYOffset;
     const windowHeight = window.innerHeight;
@@ -60,12 +62,12 @@ function isElementInMiddle() {
 function toggleBlueClass() {
   const square = document.querySelector('.square1');
   square.classList.toggle('blue', isElementInMiddle());
-
-  // Play the click sound
-  clickSound.currentTime = 0; // Reset the audio playback to the beginning
-  clickSound.play();
 }
 
 // Listen for scroll and resize events to check if the element is in the middle
 window.addEventListener('scroll', toggleBlueClass);
 window.addEventListener('resize', toggleBlueClass);
+
+const throttledToggleBlueClass = _.throttle(toggleBlueClass, 200); // Adjust the number as needed
+window.addEventListener('scroll', throttledToggleBlueClass);
+window.addEventListener('resize', throttledToggleBlueClass);

@@ -137,7 +137,7 @@ main {
   }
   
   .square1.blue {
-    background-color: blue;
+    background-color: var(--accent-color);
   }
   
   @keyframes blueAnimation {
@@ -145,7 +145,7 @@ main {
       background-color: black;
     }
     to {
-      background-color: blue;
+      background-color: var(--accent-color);
     }
   }
 
