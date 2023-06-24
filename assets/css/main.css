@@ -39,6 +39,11 @@ main {
 
 /* Education and Experience --------------------- */
 
+.edex {
+    margin-top: 0;
+    padding-top: 0;
+}
+
 .projects {
     margin-bottom: 50%;
 }
@@ -152,18 +157,20 @@ main {
 .square2 {
     height: 20px;
     width: 20px;
-    border-radius: 2px;
     background-color: black;
     margin-bottom: 10px;
     border: solid;
     border-color: var(--accent-color);
     border-radius: 2px;
 }
+
+.square2.blue {
+    background-color: var(--accent-color);
+  }
 
 .square3 {
     height: 20px;
     width: 20px;
-    border-radius: 2px;
     background-color: black;
     margin-bottom: 10px;
     border: solid;
@@ -171,14 +178,21 @@ main {
     border-radius: 2px;
 
 }
+
+.square3.blue {
+    background-color: var(--accent-color);
+  }
 
 .square4 {
     height: 20px;
     width: 20px;
-    border-radius: 2px;
     background-color: black;
     margin-bottom: 10px;
     border: solid;
     border-color: var(--accent-color);
     border-radius: 2px;
 }
+
+.square4.blue {
+    background-color: var(--accent-color);
+  }

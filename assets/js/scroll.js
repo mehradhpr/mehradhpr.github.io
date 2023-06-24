@@ -1,3 +1,4 @@
+
 window.addEventListener(
     "scroll",
     () => {
@@ -42,32 +43,36 @@ window.addEventListener("scroll", function () {
     })
 });
 
-// Get the element you want to track
-const trackedElement = document.querySelector('.ex-ta-t');
 
-// Get the audio element for the click sound
-const clickSound = document.getElementById('clickSound');
 
-// Function to check if the tracked element is in the middle of the screen
-function isElementInMiddle() {
-  const elementRect = trackedElement.getBoundingClientRect();
+// Get the elements you want to track
+const trackedElements = [
+  { el: document.querySelector('.projects'), square: document.querySelector('.square3') },
+  { el: document.querySelector('.about-wrap'), square: document.querySelector('.square1') },
+  { el: document.querySelector('.edex'), square: document.querySelector('.square2') },
+];
+
+// Function to check if the middle of the screen hits the tracked
+function isElementInMiddle(element) {
+  const elementRect = element.getBoundingClientRect();
   const elementMidY = elementRect.top + elementRect.height / 2;
   const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
   const viewportMidY = viewportHeight / 2;
 
-  return Math.abs(elementMidY - viewportMidY) < elementRect.height / 2 + 50;
+  // Specify the range within which the tracked element triggers the square to turn blue
+  const range = elementRect.height / 2; // Adjust as needed
+
+  return Math.abs(elementMidY - viewportMidY) < range;
 }
 
 // Function to toggle the blue class on the square
 function toggleBlueClass() {
-  const square = document.querySelector('.square1');
-  square.classList.toggle('blue', isElementInMiddle());
+  trackedElements.forEach(({ el, square }) => {
+    const isInMiddle = isElementInMiddle(el);
+    square.classList.toggle('blue', isInMiddle);
+  });
 }
 
 // Listen for scroll and resize events to check if the element is in the middle
 window.addEventListener('scroll', toggleBlueClass);
 window.addEventListener('resize', toggleBlueClass);
-
-const throttledToggleBlueClass = _.throttle(toggleBlueClass, 200); // Adjust the number as needed
-window.addEventListener('scroll', throttledToggleBlueClass);
-window.addEventListener('resize', throttledToggleBlueClass);
