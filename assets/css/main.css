@@ -142,7 +142,7 @@ main {
   }
   
   .square1.blue {
-    background-color: var(--accent-color);
+    background-color: var(--secondary-color);
   }
   
   @keyframes blueAnimation {
@@ -150,7 +150,7 @@ main {
       background-color: black;
     }
     to {
-      background-color: var(--accent-color);
+      background-color: #ff3863;
     }
   }
 
@@ -165,7 +165,7 @@ main {
 }
 
 .square2.blue {
-    background-color: var(--accent-color);
+    background-color: var(--secondary-color);
   }
 
 .square3 {
@@ -180,7 +180,7 @@ main {
 }
 
 .square3.blue {
-    background-color: var(--accent-color);
+    background-color: var(--secondary-color);
   }
 
 .square4 {
