@@ -4,9 +4,9 @@
 
 :root {
     --main-color: rgb(199, 199, 199);
-    --secondary-color: rgb(255, 255, 255);
+    --secondary-color: rgb(255, 56, 99);
     --background-color: #000000;
-    --accent-color: rgb(0, 145, 255);
+    --accent-color: gold;
     --gradient: linear-gradient(to right, var(--accent-color), var(--background-color));
     --fx-name: 75px;
     --fs-largeTitle: 50px;
