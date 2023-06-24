@@ -3,10 +3,10 @@
 @import "about.css";
 
 :root {
-    --main-color: rgb(199, 199, 199);
-    --secondary-color: rgb(255, 56, 99);
-    --background-color: #000000;
-    --accent-color: gold;
+    --main-color: #D3D4D7;
+    --secondary-color: #ff3863;
+    --background-color: #04060D;
+    --accent-color: #3E8DE3;
     --gradient: linear-gradient(to right, var(--accent-color), var(--background-color));
     --fx-name: 75px;
     --fs-largeTitle: 50px;
