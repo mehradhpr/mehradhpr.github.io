@@ -45,11 +45,12 @@ main {
 }
 
 .projects {
-    margin-bottom: 50%;
 }
 
 .edex-t,
-.projects-t {
+.projects-t,
+.volunteering-t
+{
     padding-top: 5%;
     padding-left: 5%;
     font-size: var(--fs-largeTitle);
@@ -61,7 +62,10 @@ main {
 .ed-c-t,
 .ex-ta-t,
 .postSphere-t,
-.habitize-t {
+.habitize-t,
+.digitized-t,
+.sec-t,
+.par-t {
     color: var(--accent-color);
     font-size: var(--fs-mediumTitle);
     padding-bottom: 2%;
@@ -136,63 +140,65 @@ main {
     width: 20px;
     background-color: black;
     margin-bottom: 10px;
-    border: solid;
-    border-color: var(--accent-color);
-    border-radius: 2px;
-  }
-  
-  .square1.blue {
+    border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(to right, var(--accent-color), var(--background-color)) 1;
+}   
+
+.square1.blue {
     background-color: var(--secondary-color);
-  }
-  
-  @keyframes blueAnimation {
+}
+
+@keyframes blueAnimation {
     from {
-      background-color: black;
+        background-color: black;
     }
+
     to {
-      background-color: #ff3863;
+        background-color: #ff3863;
     }
-  }
+}
 
 .square2 {
     height: 20px;
     width: 20px;
     background-color: black;
     margin-bottom: 10px;
-    border: solid;
-    border-color: var(--accent-color);
-    border-radius: 2px;
+    border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(to right, var(--accent-color), var(--background-color)) 1;
 }
 
 .square2.blue {
     background-color: var(--secondary-color);
-  }
+}
 
 .square3 {
     height: 20px;
     width: 20px;
     background-color: black;
     margin-bottom: 10px;
-    border: solid;
-    border-color: var(--accent-color);
-    border-radius: 2px;
-
+    border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(to right, var(--accent-color), var(--background-color)) 1;
 }
 
 .square3.blue {
     background-color: var(--secondary-color);
-  }
+}
 
 .square4 {
     height: 20px;
     width: 20px;
     background-color: black;
     margin-bottom: 10px;
-    border: solid;
-    border-color: var(--accent-color);
-    border-radius: 2px;
+    border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(to right, var(--accent-color), var(--background-color)) 1;
 }
 
 .square4.blue {
-    background-color: var(--accent-color);
-  }
+    background-color: var(--secondary-color);
+}
+
+.

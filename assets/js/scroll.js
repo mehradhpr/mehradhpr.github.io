@@ -50,6 +50,7 @@ const trackedElements = [
   { el: document.querySelector('.projects'), square: document.querySelector('.square3') },
   { el: document.querySelector('.about-wrap'), square: document.querySelector('.square1') },
   { el: document.querySelector('.edex'), square: document.querySelector('.square2') },
+  { el: document.querySelector('.volunteering'), square: document.querySelector('.square4') }
 ];
 
 // Function to check if the middle of the screen hits the tracked
