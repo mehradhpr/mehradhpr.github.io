@@ -5,7 +5,7 @@
 :root {
     --main-color: #D3D4D7;
     --secondary-color: #ff3863;
-    --background-color: #04060D;
+    --background-color: #000d15;
     --accent-color: #3E8DE3;
     --gradient: linear-gradient(to right, var(--accent-color), var(--background-color));
     --fx-name: 75px;
@@ -81,6 +81,7 @@ main {
     border-width: 4px;
     border-style: solid;
     display: inline-block;
+    pointer-events: all;
 }
 
 .ibm-p {
@@ -204,5 +205,27 @@ main {
 .n-p {
     margin-top: 20px;
     max-width: 500px;
-    max-height: min-content;
+    margin: 0 auto;
+}
+
+.u-p, .ibm-p, .n-p {
+    transition: transform 0.8s; /* Animation */
+}
+
+.u-p:hover, .ibm-p:hover, .n-p:hover {
+    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.inner-box {
+    position: relative;
+    background: var(--background-color);
+    padding: 1rem;
+    margin: 1rem;
+    width: fit-content;
+    text-align: left;
+    border-image: linear-gradient(to right, var(--accent-color), var(--background-color)) 30;
+    border-width: 4px;
+    border-style: solid;
+    display: inline-block;
+    overflow: hidden; /* This is necessary to ensure that the zoomed picture doesn't go outside the box */
 }
