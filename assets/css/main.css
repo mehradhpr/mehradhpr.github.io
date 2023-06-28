@@ -203,7 +203,7 @@ main {
 }
 
 .n-p {
-    margin-top: 20px;
+    padding-top: 20px;
     max-width: 500px;
     margin: 0 auto;
 }
@@ -228,4 +228,10 @@ main {
     border-style: solid;
     display: inline-block;
     overflow: hidden; /* This is necessary to ensure that the zoomed picture doesn't go outside the box */
+}
+
+.s-p {
+    padding-top: 10px;
+    max-width: 600px;
+    margin: 0 auto;
 }
