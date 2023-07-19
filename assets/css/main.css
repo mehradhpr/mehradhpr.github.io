@@ -61,7 +61,7 @@ main {
 .ed-u-t,
 .ed-c-t,
 .ex-ta-t,
-.postSphere-t,
+.chatcafe-t,
 .habitize-t,
 .digitized-t,
 .sec-t,
@@ -234,4 +234,24 @@ main {
     padding-top: 10px;
     max-width: 600px;
     margin: 0 auto;
+}
+
+.cc1 {
+    width: 500px;
+    margin: 5px;
+    border-radius: 5px
+}
+
+.cc2 {
+    width: 815px;
+    margin: 5px;
+    display: block;
+    border-radius: 5px
+}
+
+.cc3 {
+    width: 300px;
+    border-radius: 5px;
+    margin: 5px;
+    margin-top: 10px;
 }
