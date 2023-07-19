@@ -239,19 +239,22 @@ main {
 .cc1 {
     width: 500px;
     margin: 5px;
-    border-radius: 5px
 }
 
 .cc2 {
     width: 815px;
     margin: 5px;
     display: block;
-    border-radius: 5px
 }
 
 .cc3 {
     width: 300px;
-    border-radius: 5px;
     margin: 5px;
     margin-top: 10px;
+}
+
+.chatcafe-h {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
 }
