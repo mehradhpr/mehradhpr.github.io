@@ -208,12 +208,9 @@ main {
     margin: 0 auto;
 }
 
-.u-p, .ibm-p, .n-p {
-    transition: transform 0.8s; /* Animation */
-}
 
-.u-p:hover, .ibm-p:hover, .n-p:hover {
-    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+.u-p:hover, .ibm-p:hover, .n-p:hover, .cc1:hover, .cc2:hover, .cc3:hover, .s-p:hover {
+    transform: scale(1.05);
 }
 
 .inner-box {
@@ -233,7 +230,7 @@ main {
 .s-p {
     padding-top: 10px;
     max-width: 600px;
-    margin: 0 auto;
+    margin-top: 5px;
 }
 
 .cc1 {
