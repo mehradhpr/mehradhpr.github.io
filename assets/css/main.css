@@ -258,3 +258,28 @@ main {
     justify-content: space-between;
     margin-bottom: 5px;
 }
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 0.4;
+    }
+    50% {
+      transform: scale(1.10);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0.4;
+    }
+  }
+  
+  .code-p {
+    animation: pulse 2s infinite;
+  }
+
+  .code-p:hover {
+    animation: none;
+    transform: scale(1.10);
+    opacity: 1;
+  }
