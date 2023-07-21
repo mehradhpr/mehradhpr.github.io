@@ -208,8 +208,7 @@ main {
     margin: 0 auto;
 }
 
-
-.u-p:hover, .ibm-p:hover, .n-p:hover, .cc1:hover, .cc2:hover, .cc3:hover, .s-p:hover {
+.u-p:hover, .ibm-p:hover, .n-p:hover, .cc1:hover, .cc2:hover, .cc3:hover, .s-p:hover, .mc1:hover, .mc2:hover, .mc3:hover {
     transform: scale(1.05);
 }
 
@@ -250,7 +249,7 @@ main {
     margin-top: 10px;
 }
 
-.chatcafe-h {
+.chatcafe-h, .mc-h {
     display: flex;
     justify-content: space-between;
     margin-bottom: 5px;
@@ -279,4 +278,31 @@ main {
     animation: none;
     transform: scale(1.10);
     opacity: 1;
+  }
+
+  .chatcafe-d, .mc-d {
+    display: flex;
+  }
+
+  .chatcafe-c, .mc-c {
+    padding-top: 15px;
+    padding-right: 10px;
+    color: #ff3863;
+  }
+
+  .mc1 {
+    margin: 5px;
+    margin-top: 10px;
+    width: 600px;
+  }
+
+  .mc3 {
+    margin: 5px;
+    margin-top: 10px;
+    width: 290px;
+  }
+
+  .mc2 {
+    margin: 5px;
+    width: 300px;
   }
