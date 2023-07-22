@@ -255,3 +255,45 @@ main {
     width: 300px;
   }
 
+
+
+  .checkbox {
+    opacity: 0;
+    position: fixed;
+}
+  
+  .checkbox-label {
+    margin-top: 13px;
+    right: 10px;
+
+    background-color: var(--accent-color);
+    width: 45px;
+    height: 22px;
+    border-radius: 50px;
+    position: relative;
+    padding: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .fa-moon {color: #f1c40f;
+font-size: 21px;}
+  
+  .fa-sun {color: #f39c12;
+font-size: 21px;}
+  
+  .checkbox-label .ball {
+    background-color: var(--secondary-color);
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    transition: transform 0.3s linear;
+  }
+  
+  .checkbox:checked + .checkbox-label .ball {
+    transform: translateX(23px);
+  }

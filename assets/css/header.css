@@ -11,7 +11,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    min-height: 40px;
+    max-height: 50px;
 }
 
 /* Navigation Bar ------------------------------------- */
@@ -24,6 +24,8 @@ header {
     position: relative;
     cursor: pointer;
     text-decoration: none;
+    top: 10px;
+    left: 45px;
 }
 
 /* Top and Bottom borders go out */
