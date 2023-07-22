@@ -136,69 +136,17 @@ main {
     top: 40%;
 }
 
-.square1 {
+.square1, .square2, .square3, .square4 {
     height: 20px;
     width: 20px;
-    background-color: black;
+    background-color: var(--background-color);
     margin-bottom: 10px;
     border-width: 4px;
     border-style: solid;
     border-image: linear-gradient(to right, var(--accent-color), var(--background-color)) 1;
 }   
 
-.square1.blue {
-    background-color: var(--secondary-color);
-}
-
-@keyframes blueAnimation {
-    from {
-        background-color: black;
-    }
-
-    to {
-        background-color: #ff3863;
-    }
-}
-
-.square2 {
-    height: 20px;
-    width: 20px;
-    background-color: black;
-    margin-bottom: 10px;
-    border-width: 4px;
-    border-style: solid;
-    border-image: linear-gradient(to right, var(--accent-color), var(--background-color)) 1;
-}
-
-.square2.blue {
-    background-color: var(--secondary-color);
-}
-
-.square3 {
-    height: 20px;
-    width: 20px;
-    background-color: black;
-    margin-bottom: 10px;
-    border-width: 4px;
-    border-style: solid;
-    border-image: linear-gradient(to right, var(--accent-color), var(--background-color)) 1;
-}
-
-.square3.blue {
-    background-color: var(--secondary-color);
-}
-
-.square4 {
-    height: 20px;
-    width: 20px;
-    background-color: black;
-    margin-bottom: 10px;
-    border-width: 4px;
-    border-style: solid;
-    border-image: linear-gradient(to right, var(--accent-color), var(--background-color)) 1;
-}
-
-.square4.blue {
+.square1.blue, .square2.blue, .square3.blue, .square4.blue {
     background-color: var(--secondary-color);
 }
 
@@ -287,7 +235,7 @@ main {
   .chatcafe-c, .mc-c {
     padding-top: 15px;
     padding-right: 10px;
-    color: #ff3863;
+    color: var(--secondary-color);
   }
 
   .mc1 {
