@@ -1,3 +1,5 @@
+// Call the toggleBlueClass function once the page has loaded
+window.addEventListener('load', toggleBlueClass);
 
 window.addEventListener(
     "scroll",
