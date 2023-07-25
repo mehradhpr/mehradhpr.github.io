@@ -297,3 +297,7 @@ font-size: 21px;}
   .checkbox:checked + .checkbox-label .ball {
     transform: translateX(23px);
   }
+
+.contactl {
+  pointer-events: all;
+}
