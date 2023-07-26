@@ -18,11 +18,9 @@
 }
 
 * {
+
     scroll-behavior: smooth;
-    margin: 0;
-    padding: 0;
     color: var(--main-color);
-    font: 20px Raleway;
     font-size: var(--fs-regular);
 }
 
@@ -39,39 +37,24 @@ main {
 
 /* Education and Experience --------------------- */
 
-.edex {
-    margin-top: 0;
-    padding-top: 0;
-}
-
-.projects {
-}
-
-.edex-t,
-.projects-t,
-.volunteering-t
+h1
 {
-    padding-top: 5%;
-    padding-left: 5%;
-    font-size: var(--fs-largeTitle);
-    text-align: center;
-    color: var(--secondary-color);
+  font-weight: normal;
+  padding-top: 5%;
+  padding-left: 5%;
+  font-size: var(--fs-largeTitle);
+  text-align: center;
+  color: var(--secondary-color);
 }
 
-.ed-u-t,
-.ed-c-t,
-.ex-ta-t,
-.chatcafe-t,
-.habitize-t,
-.digitized-t,
-.sec-t,
-.par-t {
-    color: var(--accent-color);
-    font-size: var(--fs-mediumTitle);
-    padding-bottom: 2%;
+h2 {
+  font-weight: normal;
+  color: var(--accent-color);
+  font-size: var(--fs-mediumTitle);
+  margin: 0;
 }
 
-.inner-box {
+.content_box {
     background: var(--background-color);
     padding: 1rem;
     margin: 1rem;
@@ -104,7 +87,6 @@ main {
     height: 100vh;
     z-index: 0;
 }
-
 
 .fade {
     opacity: 0;
@@ -155,8 +137,11 @@ main {
     max-width: 500px;
     margin: 0 auto;
 }
+.item_pic {
+  margin: 5px;
+}
 
-.u-p:hover, .ibm-p:hover, .n-p:hover, .cc1:hover, .cc2:hover, .cc3:hover, .s-p:hover, .mc1:hover, .mc2:hover, .mc3:hover {
+.item_pic:hover {
     transform: scale(1.05);
 }
 
@@ -178,23 +163,6 @@ main {
     padding-top: 10px;
     max-width: 600px;
     margin-top: 5px;
-}
-
-.cc1 {
-    width: 500px;
-    margin: 5px;
-}
-
-.cc2 {
-    width: 815px;
-    margin: 5px;
-    display: block;
-}
-
-.cc3 {
-    width: 300px;
-    margin: 5px;
-    margin-top: 10px;
 }
 
 .chatcafe-h, .mc-h {
@@ -237,25 +205,6 @@ main {
     padding-right: 10px;
     color: var(--secondary-color);
   }
-
-  .mc1 {
-    margin: 5px;
-    margin-top: 10px;
-    width: 600px;
-  }
-
-  .mc3 {
-    margin: 5px;
-    margin-top: 10px;
-    width: 290px;
-  }
-
-  .mc2 {
-    margin: 5px;
-    width: 300px;
-  }
-
-
 
   .checkbox {
     opacity: 0;
