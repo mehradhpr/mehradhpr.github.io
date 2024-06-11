@@ -19,11 +19,11 @@ import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
 
 export const NavBar = () => {
   return (
-    <div className="my-3 w-full flex justify-center">
+    <div className="w-11/12 flex justify-center py-2 shadow-2xl bg-gradient-to-br from-yellow-300 via-amber-600 via-65% to-amber-700 rounded-2xl mx-auto mt-2">
       <NavigationMenu>
         <NavigationMenuList className="flex space-x-10">
           <NavigationMenuItem>
-            <Link href="/about" legacyBehavior passHref>
+            <Link href="/" legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 About
               </NavigationMenuLink>
