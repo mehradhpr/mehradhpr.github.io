@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-gradient-to-br from-amber-300 via-amber-600 via-65% to-amber-700">
-      <body className={`${inter.className} bg-inherit bg-opacity-80`}>
+      <body className={`${inter.className} bg-inherit bg-opacity-80 select-none`}>
         <NavBar />
         {children}
         <Footer />
