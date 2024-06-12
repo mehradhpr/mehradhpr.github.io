@@ -9,7 +9,7 @@ export default function Home() {
       <div className=" z-0">
         <ParticleImageComponent />
       </div>
-      <div className="z-10 -ml-48 mt-40">
+      <div className="z-10 -ml-44 mt-40">
         <About />
       </div>
     </Card>
