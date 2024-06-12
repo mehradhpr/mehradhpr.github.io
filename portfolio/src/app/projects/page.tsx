@@ -13,7 +13,7 @@ import { Github } from "lucide-react";
 
 const Projects = () => {
   return (
-    <div className="w-11/12 flex justify-center py-2 shadow-2xl bg-gradient-to-br from-yellow-300 via-amber-600 via-65% to-amber-700 rounded-2xl mx-auto mt-2">
+    <div className="w-11/12 flex justify-center py-2 shadow-2xl bg-gradient-to-br from-yellow-300 via-amber-600 via-65% to-amber-700 rounded-2xl mx-auto">
       <div className="flex justify-center items-center min-h-screen p-10">
         <div className="grid grid-cols-2 gap-20">
           <Card className="size-fit max-w-xl">
