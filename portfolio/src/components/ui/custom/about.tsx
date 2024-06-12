@@ -34,7 +34,7 @@ const About = () => {
           "A Software  Designer", // Types 'Three' without deleting 'Two'
           1500,
           "An AI enthusiast",
-          3000,
+          2000,
           () => {
             console.log("Sequence completed");
           },
