@@ -7,7 +7,11 @@ import ParticleImage, {
   forces,
   ParticleForce,
 } from "react-particle-image";
+import useScreenSize from "@/hooks/useScreenSize";
+
 export default function ParticleImageComponent() {
+  const screenSize = useScreenSize();
+
   const particleOptions: ParticleOptions = {
     filter: ({ x, y, image }) => {
       // Get pixel
@@ -30,21 +34,25 @@ export default function ParticleImageComponent() {
     return forces.blackHole(x, y, 3);
   };
 
+  const props =
+    screenSize === "mobile"
+      ? { width: 450, height: 500, scale: 0.3 }
+      : { width: 900, height: 900, scale: 0.6 };
+
   return (
     <div className="overflow-hidden">
       <ParticleImage
         src="/side.png"
-        scale={0.6}
+        scale={props.scale}
         entropy={20}
-        maxParticles={15000}
+        maxParticles={10000}
         backgroundColor="inheret"
         creationDuration={1000}
         particleOptions={particleOptions}
-        height={900}
-        width={900}
+        height={props.height}
+        width={props.width}
         mouseMoveForce={motionForce}
         touchMoveForce={motionForce}
-        mouseDownForce={activeForce}
       />
     </div>
   );

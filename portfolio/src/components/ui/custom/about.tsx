@@ -3,54 +3,82 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { useState } from "react";
-import { Card } from "../card";
+import useScreenSize from "@/hooks/useScreenSize";
 
 const About = () => {
   const [textColor, setTextColor] = useState("black");
+  const screenSize = useScreenSize();
 
-  return (
-    <div className="flex flex-col text-black border-none p-5">
-      <TypeAnimation
-        sequence={[
-          "Mehrad Hassanpour",
-          () => {
-            console.log("Sequence completed");
-          },
-        ]}
-        wrapper="span"
-        cursor={false}
-        repeat={0}
-        style={{
-          color: textColor,
-          fontSize: "3em",
-        }}
-      />
+  if (screenSize === "mobile") {
+    return (
+      <div className="flex flex-col items-start text-left text-black border-none">
+        <TypeAnimation
+          sequence={[
+            "Hey, I am",
+            () => {
+              console.log("Sequence completed");
+            },
+          ]}
+          wrapper="span"
+          cursor={false}
+          repeat={0}
+          style={{
+            width: 200,
+            color: textColor,
+            fontSize: "1.2em",
+            whiteSpace: "pre-line",
+          }}
+        />
 
-      <TypeAnimation
-        sequence={[
-          2500,
-          "A Software Developer", // Types 'Three' without deleting 'Two'
-          1500,
-          "A Software  Designer", // Types 'Three' without deleting 'Two'
-          1500,
-          "An AI enthusiast",
-          2000,
-          () => {
-            console.log("Sequence completed");
-          },
-        ]}
-        wrapper="span"
-        cursor={true}
-        repeat={Infinity}
-        style={{
-          color: textColor,
-          whiteSpace: "pre-line",
-          fontSize: "2em",
-          display: "inline-block",
-        }}
-      />
-    </div>
-  );
+        <TypeAnimation
+          sequence={[
+            2000,
+            "Mehrad Hassanpour",
+            () => {
+              console.log("Sequence completed");
+            },
+          ]}
+          wrapper="span"
+          cursor={false}
+          repeat={0}
+          style={{
+            width: 350,
+            color: textColor,
+            fontSize: "2em",
+            whiteSpace: "pre-line",
+          }}
+        />
+
+        <TypeAnimation
+          sequence={[
+            3000,
+            "A Software Developer",
+            1500,
+            "A Software Designer",
+            1500,
+            "An AI enthusiast",
+            2000,
+            () => {
+              console.log("Sequence completed");
+            },
+          ]}
+          wrapper="span"
+          cursor={true}
+          repeat={Infinity}
+          style={{
+            width: 350,
+            color: textColor,
+            whiteSpace: "pre-line",
+            fontSize: "1.6em",
+            display: "inline-block",
+            fontWeight: "bold",
+            marginTop: "15px",
+          }}
+        />
+      </div>
+    );
+  } else {
+  }
 };
 
 export default About;

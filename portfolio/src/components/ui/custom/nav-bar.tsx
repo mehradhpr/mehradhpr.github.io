@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import {
   NavigationMenu,
@@ -13,17 +13,91 @@ import {
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
 
-import { GithubIcon, Linkedin } from "lucide-react";
+import useScreenSize from "@/hooks/useScreenSize";
+
+import { GithubIcon, Linkedin, Menu } from "lucide-react";
 
 import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
 
 export const NavBar = () => {
-  return (
-    <div className="w-11/12 flex items-center py-2 bg-card shadow-2xl rounded-2xl mx-auto mt-3 mb-3 relative">
-      <p className="absolute left-2 p-2 text-md font-bold text-card-foreground bg-primary rounded-xl shadow-xl">
-        Mehrad Hassanpour
-      </p>
-      <div className="mx-auto">
+  const screenSize = useScreenSize();
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
+
+  const mobileNavToggle = () => {
+    setMobileNavOpen(!mobileNavOpen);
+  };
+
+  const handleLinkClick = () => {
+    setMobileNavOpen(false);
+  };
+
+  if (screenSize === "mobile") {
+    return (
+      <div className="fixed top-0 w-screen bg-white flex justify-between items-center p-1 z-20">
+        <div className="flex items-center gap-1">
+          <Menu onClick={mobileNavToggle} />
+
+          <Link href="https://github.com/mehradhpr">
+            <GithubIcon className="transition-colors hover:bg-accent/50 p-2 size-10 rounded-md" />
+          </Link>
+
+          <Link href="https://www.linkedin.com/in/mehradhassanp/">
+            <Linkedin className="transition-colors hover:bg-accent/50 p-2 size-10 rounded-md" />
+          </Link>
+        </div>
+
+        <div className="flex-grow flex justify-end">
+          <div className="p-2 text-md font-bold text-card-foreground bg-primary rounded-xl shadow-xl min-h-fit min-w-fit">
+            Mehrad Hassanpour
+          </div>
+        </div>
+
+        {mobileNavOpen && (
+          <div className="absolute top-12 right-0 w-full bg-white z-10">
+            <div className="flex flex-col p-2">
+              <Link
+                href="/"
+                className="p-2 hover:bg-accent/50 rounded-md"
+                onClick={handleLinkClick}
+              >
+                About
+              </Link>
+              <Link
+                href="/education"
+                className="p-2 hover:bg-accent/50 rounded-md"
+                onClick={handleLinkClick}
+              >
+                Education
+              </Link>
+              <Link
+                href="/experience"
+                className="p-2 hover:bg-accent/50 rounded-md"
+                onClick={handleLinkClick}
+              >
+                Experience
+              </Link>
+              <Link
+                href="/projects"
+                className="p-2 hover:bg-accent/50 rounded-md"
+                onClick={handleLinkClick}
+              >
+                Projects
+              </Link>
+              <Link
+                href="/volunteering"
+                className="p-2 hover:bg-accent/50 rounded-md"
+                onClick={handleLinkClick}
+              >
+                Volunteering
+              </Link>
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  } else {
+    return (
+      <div className="desktop-menu flex justify-between items-center p-1 shadow-2xl">
         <NavigationMenu>
           <NavigationMenuList className="flex">
             <NavigationMenuItem>
@@ -33,7 +107,6 @@ export const NavBar = () => {
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
-
             <NavigationMenuItem>
               <Link href="/education" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
@@ -41,7 +114,6 @@ export const NavBar = () => {
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
-
             <NavigationMenuItem>
               <Link href="/experience" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
@@ -49,7 +121,6 @@ export const NavBar = () => {
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
-
             <NavigationMenuItem>
               <Link href="/projects" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
@@ -57,7 +128,6 @@ export const NavBar = () => {
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
-
             <NavigationMenuItem>
               <Link href="/volunteering" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
@@ -65,29 +135,12 @@ export const NavBar = () => {
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
-
-            <NavigationMenuItem>
-              <Link href="https://github.com/mehradhpr" legacyBehavior passHref>
-                <a href="https://github.com/mehradhpr" target="_blank" rel="noopener noreferrer">
-                  <GithubIcon className="mx-2 transition-colors hover:bg-accent/50 p-2 size-10 rounded-md" />
-                </a>
-              </Link>
-            </NavigationMenuItem>
-
-            <NavigationMenuItem>
-              <Link href="https://www.linkedin.com/in/mehradhassanp/" legacyBehavior passHref>
-                <a
-                  href="https://www.linkedin.com/in/mehradhassanp/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Linkedin className="transition-colors hover:bg-accent/50 p-2 size-10 rounded-md" />
-                </a>
-              </Link>
-            </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
+        <div className="p-2 text-md font-bold text-card-foreground bg-primary rounded-xl shadow-xl min-h-fit min-w-fit">
+          Mehrad Hassanpour
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 };
