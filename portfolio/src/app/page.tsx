@@ -22,11 +22,11 @@ export default function Home() {
     );
   } else {
     return (
-      <Card className="flex h-screen shadow-2xl bg-card rounded-none mx-auto overflow-hidden">
+      <Card className="flex flex-row items-center w-11/12 h-screen shadow-2xl bg-card mx-auto overflow-hidden">
         <div className="z-0">
           <ParticleImageComponent />
         </div>
-        <div className="-ml-36 mt-40">
+        <div>
           <About />
         </div>
       </Card>

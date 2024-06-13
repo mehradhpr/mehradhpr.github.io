@@ -97,7 +97,7 @@ export const NavBar = () => {
     );
   } else {
     return (
-      <div className="desktop-menu flex justify-between items-center p-1 shadow-2xl">
+      <div className="flex w-11/12 bg-white justify-between rounded-xl mx-auto items-center p-1 shadow-2xl my-2">
         <NavigationMenu>
           <NavigationMenuList className="flex">
             <NavigationMenuItem>

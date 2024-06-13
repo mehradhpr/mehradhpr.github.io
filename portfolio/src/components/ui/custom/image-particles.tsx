@@ -50,7 +50,7 @@ export default function ParticleImageComponent() {
         creationDuration={1000}
         particleOptions={particleOptions}
         height={props.height}
-        width={props.width}
+        width={window.innerWidth / 2}
         mouseMoveForce={motionForce}
         touchMoveForce={motionForce}
       />
