@@ -11,7 +11,7 @@ export default function Home() {
 
   if (screenSize === "mobile") {
     return (
-      <Card className="flex flex-col items-center h-screen shadow-lg bg-card rounded-none mx-auto mt-10 z-100 overflow-hidden">
+      <Card className="flex flex-col items-center border-none h-screen w-screen bg-card rounded-none mx-auto overflow-hidden">
         <div>
           <ParticleImageComponent />
         </div>

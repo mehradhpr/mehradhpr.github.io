@@ -45,7 +45,7 @@ export default function ParticleImageComponent() {
         src="/side.png"
         scale={props.scale}
         entropy={20}
-        maxParticles={10000}
+        maxParticles={1000}
         backgroundColor="inheret"
         creationDuration={1000}
         particleOptions={particleOptions}
