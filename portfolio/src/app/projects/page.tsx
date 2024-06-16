@@ -1,5 +1,6 @@
 import React from "react";
 import { Github } from "lucide-react";
+import Image from "next/image";
 
 const Projects = () => {
   return (
@@ -81,6 +82,33 @@ const Projects = () => {
               architecture. Crafted through the implementation of agile methodologies and fostered
               by seamless team collaboration.
             </p>
+
+            <div className="flex flex-col gap-5 mt-5">
+              <div className="relative h-60 rounded-xl overflow-hidden">
+                <Image
+                  src="/morax-calendar/mc1.png"
+                  fill={true}
+                  alt="Picture of the University"
+                  priority={true}
+                />
+              </div>
+              <div className="relative h-60 rounded-xl overflow-hidden">
+                <Image
+                  src="/morax-calendar/mc4.png"
+                  fill={true}
+                  alt="Picture of the University"
+                  priority={true}
+                />
+              </div>
+              <div className="relative h-60 rounded-xl overflow-hidden">
+                <Image
+                  src="/morax-calendar/mc3.png"
+                  fill={true}
+                  alt="Picture of the University"
+                  priority={true}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>

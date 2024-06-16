@@ -24,7 +24,7 @@ const About = () => {
           style={{
             width: 320,
             color: "#D15EFF",
-            fontSize: "1.5em",
+            fontSize: "1em",
           }}
         />
 
