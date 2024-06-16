@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Projects = () => {
   return (
-    <div className="w-screen min-h-screen overflow-hidden flex flex-col items-center p-4">
+    <div className=" max-w-96 min-h-screen overflow-hidden flex flex-col items-center p-4">
       <section className="p-20">
         <h1 className="text-2xl text-title tracking-widest">Projects</h1>
       </section>
@@ -51,6 +51,24 @@ const Projects = () => {
               discussions. Built with Node.js, React, MySQL, and utilizing RESTful principles.
               Offering a responsive, dynamic, and user-friendly experience.
             </p>
+            <div className="flex flex-col gap-5 mt-5">
+              <div className="relative h-60 rounded-xl overflow-hidden">
+                <Image
+                  src="/mso/mso.gif"
+                  fill={true}
+                  alt="Picture of the University"
+                  priority={true}
+                />
+              </div>
+              <div className="relative h-60 rounded-xl overflow-hidden">
+                <Image
+                  src="/mso/mso1.png"
+                  fill={true}
+                  alt="Picture of the University"
+                  priority={true}
+                />
+              </div>
+            </div>
           </div>
         </div>
 
