@@ -71,7 +71,7 @@ const About = () => {
           }}
         />
       </div>
-      <div className="bg-black h-12"></div>
+      <div className="h-12"></div>
     </div>
   );
 };
