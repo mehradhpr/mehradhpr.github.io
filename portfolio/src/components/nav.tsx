@@ -37,7 +37,7 @@ export const NavBar = () => {
         </div>
 
         {mobileNavOpen && (
-          <div className="absolute top-11 right-0 w-full bg-white z-40 shadow-xl bg-gray2">
+          <div className="absolute top-11 right-0 w-full z-40 shadow-xl bg-gray2">
             <div className="flex flex-col p-2">
               <Link href="/" className="p-2 rounded-md" onClick={handleLinkClick}>
                 About

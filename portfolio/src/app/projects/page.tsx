@@ -52,20 +52,22 @@ const Projects = () => {
               Offering a responsive, dynamic, and user-friendly experience.
             </p>
             <div className="flex flex-col gap-5 mt-5">
-              <div className="relative h-60 rounded-xl overflow-hidden">
+              <div className="relative h-60">
                 <Image
                   src="/mso/mso.gif"
                   fill={true}
                   alt="Picture of the University"
                   priority={true}
+                  className="rounded-xl"
                 />
               </div>
-              <div className="relative h-60 rounded-xl overflow-hidden">
+              <div className="relative h-60">
                 <Image
                   src="/mso/mso1.png"
                   fill={true}
                   alt="Picture of the University"
                   priority={true}
+                  className="rounded-xl"
                 />
               </div>
             </div>

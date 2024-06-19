@@ -17,13 +17,13 @@ const Education = () => {
             <div className="text-blue text-lg">Bachelor&apos;s of Science in Computer Science</div>
             <div>Graduated with Great Distinction</div>
             <div>Cumulative Weighted Average of 85%</div>
-            <div className="relative h-60">
+            <div className="relative h-60 mt-4">
               <Image
                 src="/uofs.jpeg"
                 fill={true}
                 alt="Picture of the University"
-                className="pt-5"
                 priority={true}
+                className="rounded-xl"
               />
             </div>
 
@@ -66,13 +66,13 @@ const Education = () => {
             >
               link to the original certificate on Edx
             </a>
-            <div className="relative h-72">
+            <div className="relative h-72 mt-4">
               <Image
                 src="/ibm-sql.png"
                 fill={true}
                 alt="Picture of the University"
-                className="pt-5"
                 priority={true}
+                className="rounded-xl"
               />
             </div>
             <div className="pt-5">
