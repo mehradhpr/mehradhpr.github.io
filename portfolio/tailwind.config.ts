@@ -18,6 +18,15 @@ export default {
         gray2: "#333333",
       },
     },
+    keyframes: {
+      marquee: {
+        "0%": { transform: "translateX(25%)" },
+        "100%": { transform: "translateX(-25%)" },
+      },
+    },
+    animation: {
+      marquee: "marquee 40s linear infinite",
+    },
   },
   plugins: [],
 } as Config;

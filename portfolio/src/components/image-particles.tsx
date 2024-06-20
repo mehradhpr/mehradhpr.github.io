@@ -22,7 +22,7 @@ export default function ParticleImageComponent() {
       } else if (pixel.g < 60) {
         return "#D15EFF";
       }
-      return "#e3e3e3";
+      return "#4CAF50";
     },
     radius: () => 1.5,
   };

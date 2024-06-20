@@ -19,7 +19,11 @@ export const NavBar = () => {
     <div>
       <div className="fixed top-0 w-screen bg-gray2 flex justify-between items-center p-1 z-20 shadow-4xl">
         <div className="flex items-center gap-1">
-          {mobileNavOpen ? <Rows3 onClick={mobileNavToggle} /> : <Menu onClick={mobileNavToggle} />}
+          {mobileNavOpen ? (
+            <Rows3 onClick={mobileNavToggle} className="text-green-500" />
+          ) : (
+            <Menu onClick={mobileNavToggle} className="text-green-500" />
+          )}
 
           <Link href="https://github.com/mehradhpr">
             <GithubIcon className="transition-colors p-2 size-10 rounded-md text-pink" />
