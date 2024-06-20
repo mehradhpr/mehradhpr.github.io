@@ -8,6 +8,7 @@ import Projects from "./projects/page";
 import Experience from "./experience/page";
 import Volunteering from "./volunteering/page";
 import TickerTape from "@/components/scroller";
+import Contact from "@/app/contact/page";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Projects />
       <Experience />
       <Volunteering />
+      <Contact />
     </div>
   );
 }
