@@ -17,8 +17,8 @@ export default function Home() {
       <About />
       <TickerTape />
       <Education />
-      <Projects />
       <Experience />
+      <Projects />
       <Volunteering />
       <Contact />
     </div>

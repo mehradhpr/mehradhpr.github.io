@@ -5,3 +5,11 @@
 html {
   @apply text-general bg-background select-none
 }
+
+input {
+  @apply text-general bg-background ring-1 rounded-lg p-2 focus:ring-pink
+}
+
+textarea {
+  @apply text-general bg-background ring-1 rounded-lg p-2 focus:ring-pink
+}
