@@ -22,7 +22,7 @@ const Volunteering = () => {
             Saskatoon, Saskatchewan | 2023
           </div>
           <div className="pt-5 flex flex-col">
-            <div className="relative w-full h-[200px] min-[830px]:h-[300px] place-self-center">
+            <div className="relative w-full h-[150px] min-[830px]:h-[300px] place-self-center">
               <Image
                 src="/digitized.png"
                 fill={true}

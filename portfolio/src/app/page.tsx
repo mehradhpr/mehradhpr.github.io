@@ -3,9 +3,8 @@
 import About from "@/components/about";
 import ParticleImageComponent from "@/components/image-particles";
 import React from "react";
-import Education from "./education/page";
 import Projects from "./projects/page";
-import Experience from "./experience/page";
+import Experience from "./ed&ex/page";
 import Volunteering from "./volunteering/page";
 import TickerTape from "@/components/scroller";
 import Contact from "@/app/contact/page";
@@ -16,7 +15,6 @@ export default function Home() {
       <ParticleImageComponent />
       <About />
       <TickerTape />
-      <Education />
       <Experience />
       <Projects />
       <Volunteering />

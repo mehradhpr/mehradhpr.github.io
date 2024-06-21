@@ -50,21 +50,43 @@ export const NavBar = () => {
           mobileNavOpen && (
             <div className="absolute top-11 right-0 w-full z-40 shadow-xl bg-gray2">
               <div className="flex flex-col p-2">
-                <Link href="/" className="p-2 rounded-md" onClick={handleLinkClick}>
-                  About
-                </Link>
-                <Link href="/education" className="p-2 rounded-md" onClick={handleLinkClick}>
-                  Education
-                </Link>
-                <Link href="/experience" className="p-2 rounded-md" onClick={handleLinkClick}>
-                  Experience
-                </Link>
-                <Link href="/projects" className="p-2 rounded-md" onClick={handleLinkClick}>
-                  Projects
-                </Link>
-                <Link href="/volunteering" className="p-2 rounded-md" onClick={handleLinkClick}>
-                  Volunteering
-                </Link>
+                <div className="flex flex-col z-10">
+                  <div className="flex flex-row">
+                    <Link href="/" className="p-2 rounded-md" onClick={handleLinkClick}>
+                      <div className="px-2 py-1 size-fit text-title rounded-lg border border-pink hover:bg-blue shadow-lg cursor-pointer transition-colors duration-300 ml-auto">
+                        About
+                      </div>
+                    </Link>
+                    <div className="flex flex-row ml-auto items-end">
+                      <Link href="/contact" className="p-2 rounded-md" onClick={handleLinkClick}>
+                        <div className="px-4 py-1 bg-gradient-to-r from-blue to-pink size-fit text-title rounded-lg shadow-lg hover:bg-blue cursor-pointer transition-colors duration-300 ml-auto">
+                          Contact
+                        </div>
+                      </Link>
+                      <Link href="/blog" className="p-2 rounded-md" onClick={handleLinkClick}>
+                        <div className="px-4 py-1 bg-gradient-to-r from-green-500 to-blue size-fit text-title rounded-lg shadow-lg hover:bg-blue cursor-pointer transition-colors duration-300 ml-auto">
+                          Blog
+                        </div>
+                      </Link>
+                    </div>
+                  </div>
+
+                  <Link href="/ed&ex" className="p-2 rounded-md" onClick={handleLinkClick}>
+                    <div className="px-2 py-1 size-fit text-title rounded-lg border border-pink hover:bg-blue shadow-lg cursor-pointer transition-colors duration-300">
+                      Education and Experience
+                    </div>
+                  </Link>
+                  <Link href="/projects" className="p-2 rounded-md" onClick={handleLinkClick}>
+                    <div className="px-2 py-1 size-fit text-title rounded-lg border-2 border-blue hover:bg-blue shadow-lg cursor-pointer transition-colors duration-300">
+                      Projects
+                    </div>
+                  </Link>
+                  <Link href="/volunteering" className="p-2 rounded-md" onClick={handleLinkClick}>
+                    <div className="px-2 py-1 size-fit text-title rounded-lg border border-pink hover:bg-blue shadow-lg cursor-pointer transition-colors duration-300">
+                      Volunteering
+                    </div>
+                  </Link>
+                </div>
               </div>
             </div>
           )

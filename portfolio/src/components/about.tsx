@@ -3,6 +3,7 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { useState } from "react";
+import Link from "next/link";
 
 const About = () => {
   const [textColor, setTextColor] = useState("black");
@@ -71,6 +72,12 @@ const About = () => {
           }}
         />
       </div>
+      <Link href="/contact" className="p-2 rounded-md">
+        <div className="px-4 py-1 bg-gradient-to-r from-blue to-pink size-fit text-title rounded-lg shadow-lg hover:bg-blue cursor-pointer transition-colors duration-300 ml-auto">
+          Contact
+        </div>
+      </Link>
+
       <div className="h-12"></div>
     </div>
   );

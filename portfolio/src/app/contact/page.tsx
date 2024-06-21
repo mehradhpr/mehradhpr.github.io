@@ -14,26 +14,25 @@ const Contact = () => {
           <form className="flex flex-col gap-4">
             <input
               type="text"
-              placeholder="Name"
-              className="border border-gray-500 p-2 rounded-lg min-[830px]:p-3"
-            />
-            <input
-              type="text"
-              placeholder="Company"
+              placeholder="Your Name"
               className="border border-gray-500 p-2 rounded-lg min-[830px]:p-3"
             />
             <input
               type="email"
-              placeholder="Email"
+              placeholder="Your Email"
               className="border border-gray-500 p-2 rounded-lg min-[830px]:p-3"
             />
             <textarea
-              placeholder="Message"
+              placeholder="Your Message"
               className="border border-gray-500 p-2 rounded-lg min-[830px]:p-3 h-32 min-[830px]:h-48"
             ></textarea>
             <button className="bg-blue text-white p-2 rounded-lg min-[830px]:p-3">Send</button>
           </form>
         </div>
+        <p className="mt-4 text-sm text-content min-[830px]:text-base">
+          Feel free to reach out to me for collaboration, project inquiries, or job offers! I
+          typically respond within 1-2 business days.
+        </p>
       </div>
     </div>
   );
