@@ -35,7 +35,7 @@ export default function ParticleImageComponent() {
         setMaxParticles(12000);
       } else if (window.innerWidth > 1300) {
         setScale(0.57);
-        setSize({ width: 750, height: 900 });
+        setSize({ width: 750, height: 950 });
         setMaxParticles(11000);
       } else if (window.innerWidth > 1070) {
         setScale(0.5);

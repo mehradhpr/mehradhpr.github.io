@@ -17,7 +17,7 @@ export const NavBar = () => {
   };
 
   const updateScreenSize = () => {
-    setIsMobile(window.innerWidth <= 830); // You can adjust this value based on your design
+    setIsMobile(window.innerWidth <= 810); // You can adjust this value based on your design
   };
 
   useEffect(() => {
@@ -38,11 +38,11 @@ export const NavBar = () => {
             ))}
 
           <Link href="https://github.com/mehradhpr">
-            <GithubIcon className="transition-colors p-2 size-10 rounded-md text-pink" />
+            <GithubIcon className="transition-colors p-2 size-10 xl:size-16 rounded-md text-pink" />
           </Link>
 
           <Link href="https://www.linkedin.com/in/mehradhassanp/">
-            <Linkedin className="transition-colors p-2 size-10 rounded-md text-blue" />
+            <Linkedin className="transition-colors p-2 size-10 xl:size-16 rounded-md text-blue" />
           </Link>
         </div>
 
@@ -91,23 +91,41 @@ export const NavBar = () => {
             </div>
           )
         ) : (
-          <div className="flex gap-4 p-2 justify-center">
-            <Link href="/" className="rounded-md">
+          <div className="flex gap-4 py-2 justify-center sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+            <Link
+              href="/"
+              className="rounded-md py-2 hover:bg-gray-200 transition-colors duration-300"
+            >
               About
             </Link>
-            <Link href="/ed&ex" className="rounded-md">
+            <Link
+              href="/ed&ex"
+              className="rounded-md py-2 hover:bg-gray-200 transition-colors duration-300"
+            >
               Education & Experience
             </Link>
-            <Link href="/projects" className="rounded-md">
+            <Link
+              href="/projects"
+              className="rounded-md py-2 hover:bg-gray-200 transition-colors duration-300"
+            >
               Projects
             </Link>
-            <Link href="/volunteering" className="rounded-md">
+            <Link
+              href="/volunteering"
+              className="rounded-md py-2 hover:bg-gray-200 transition-colors duration-300"
+            >
               Volunteering
             </Link>
-            <Link href="/contact" className="rounded-md font-bold">
+            <Link
+              href="/contact"
+              className="rounded-md py-2 hover:bg-gray-200 transition-colors duration-300 font-bold"
+            >
               Contact
             </Link>
-            <Link href="/blog" className="rounded-md font-bold">
+            <Link
+              href="/blog"
+              className="rounded-md py-2 hover:bg-gray-200 transition-colors duration-300 font-bold"
+            >
               Blog
             </Link>
           </div>
@@ -115,7 +133,7 @@ export const NavBar = () => {
 
         <div className="flex justify-end">
           <Link href="/" className="rounded-md">
-            <div className="p-2 text-md text-title rounded-xl min-h-fit min-w-fit z-50 tracking-widest">
+            <div className="p-2 text-md text-title rounded-xl min-h-fit min-w-fit z-50 tracking-widest xl:text-2xl">
               Mehrad Hassanpour
             </div>
           </Link>
