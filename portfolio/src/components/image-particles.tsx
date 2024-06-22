@@ -1,6 +1,4 @@
-"use client";
-
-import * as React from "react";
+import React, { useEffect, useState } from "react";
 import ParticleImage, {
   ParticleOptions,
   Vector,
@@ -9,6 +7,34 @@ import ParticleImage, {
 } from "react-particle-image";
 
 export default function ParticleImageComponent() {
+  const [scale, setScale] = useState(0.3);
+  const [size, setSize] = useState({ width: 500, height: 450 });
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 1070) {
+        setScale(0.5);
+        setSize({ width: 600, height: 800 });
+        console.log(size);
+      } else if (window.innerWidth > 830) {
+        setScale(0.42);
+        setSize({ width: 550, height: 700 });
+        console.log(size);
+      } else {
+        setScale(0.3);
+        setSize({ width: 500, height: 450 });
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const particleOptions: ParticleOptions = {
     filter: ({ x, y, image }) => {
       // Get pixel
@@ -36,17 +62,17 @@ export default function ParticleImageComponent() {
   };
 
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-visible">
       <ParticleImage
         src="/side.png"
-        scale={0.3}
+        scale={scale}
         entropy={20}
         maxParticles={8000}
-        backgroundColor="inheret"
+        backgroundColor="inehret"
         creationDuration={1000}
         particleOptions={particleOptions}
-        height={500}
-        width={450}
+        height={size.height}
+        width={size.width}
         mouseMoveForce={motionForce}
         touchMoveForce={motionForce}
       />

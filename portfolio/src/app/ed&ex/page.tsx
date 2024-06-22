@@ -97,7 +97,7 @@ const Experience = () => {
               - C Language, Pointers, Memory, Makefile
               <br />
               - Bash, Git, Shell scripting
-              <br />- Linux OS
+              <br />- Linux Operating System
             </p>
             <p className="mt-4 min-[830px]:text-lg">
               Facilitated laboratory sessions with students, providing individualized tutorial

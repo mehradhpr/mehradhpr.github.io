@@ -29,7 +29,7 @@ const Blog = () => {
   ];
 
   return (
-    <div className="w-full min-h-screen overflow-hidden flex flex-col items-center p-4">
+    <div className="w-full min-h-screen overflow-hidden flex flex-col items-center p-4 mb-10">
       <section className="p-20 min-[830px]:p-28">
         <h1 className="text-2xl font-bold tracking-widest min-[830px]:text-3xl">Blog</h1>
       </section>

@@ -92,28 +92,33 @@ export const NavBar = () => {
           )
         ) : (
           <div className="flex gap-4 p-2 justify-center">
-            <Link href="/" className="p-2 rounded-md">
+            <Link href="/" className="rounded-md">
               About
             </Link>
-            <Link href="/education" className="p-2 rounded-md">
-              Education
+            <Link href="/ed&ex" className="rounded-md">
+              Education & Experience
             </Link>
-            <Link href="/experience" className="p-2 rounded-md">
-              Experience
-            </Link>
-            <Link href="/projects" className="p-2 rounded-md">
+            <Link href="/projects" className="rounded-md">
               Projects
             </Link>
-            <Link href="/volunteering" className="p-2 rounded-md">
+            <Link href="/volunteering" className="rounded-md">
               Volunteering
+            </Link>
+            <Link href="/contact" className="rounded-md font-bold">
+              Contact
+            </Link>
+            <Link href="/blog" className="rounded-md font-bold">
+              Blog
             </Link>
           </div>
         )}
 
         <div className="flex justify-end">
-          <div className="p-2 text-md text-title rounded-xl min-h-fit min-w-fit z-50 tracking-widest">
-            Mehrad Hassanpour
-          </div>
+          <Link href="/" className="rounded-md">
+            <div className="p-2 text-md text-title rounded-xl min-h-fit min-w-fit z-50 tracking-widest">
+              Mehrad Hassanpour
+            </div>
+          </Link>
         </div>
       </div>
       <div className="h-11"></div>
