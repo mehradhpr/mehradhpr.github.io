@@ -21,7 +21,7 @@ const TickerTape: React.FC = () => {
         {logos.map((logo, index) => (
           <div
             key={index}
-            className="relative mx-4 h-12 w-12 sm:h-16 sm:w-16 md:h-16 md:w-16 lg:h-18 lg:w-18"
+            className="relative mx-4 lg:mx-8 h-12 w-12 sm:h-16 sm:w-16 md:h-16 md:w-16 lg:h-18 lg:w-18"
           >
             <Image
               src={logo.small}
@@ -42,7 +42,7 @@ const TickerTape: React.FC = () => {
         {logos.map((logo, index) => (
           <div
             key={index + logos.length}
-            className="relative mx-4 h-12 w-12 sm:h-16 sm:w-16 md:h-16 md:w-16 lg:h-18 lg:w-18"
+            className="relative mx-4 lg:mx-8 h-12 w-12 sm:h-16 sm:w-16 md:h-16 md:w-16 lg:h-18 lg:w-18"
           >
             <Image
               src={logo.small}
@@ -63,7 +63,7 @@ const TickerTape: React.FC = () => {
         {logos.map((logo, index) => (
           <div
             key={index + logos.length * 2}
-            className="relative mx-4 h-12 w-12 sm:h-16 sm:w-16 md:h-16 md:w-16 lg:h-18 lg:w-18"
+            className="relative mx-4 lg:mx-8 h-12 w-12 sm:h-16 sm:w-16 md:h-16 md:w-16 lg:h-18 lg:w-18"
           >
             <Image
               src={logo.small}
@@ -84,7 +84,7 @@ const TickerTape: React.FC = () => {
         {logos.map((logo, index) => (
           <div
             key={index + logos.length * 3}
-            className="relative mx-4 h-12 w-12 sm:h-16 sm:w-16 md:h-16 md:w-16 lg:h-18 lg:w-18"
+            className="relative mx-4 lg:mx-8 h-12 w-12 sm:h-16 sm:w-16 md:h-16 md:w-16 lg:h-18 lg:w-18"
           >
             <Image
               src={logo.small}
@@ -105,7 +105,7 @@ const TickerTape: React.FC = () => {
         {logos.map((logo, index) => (
           <div
             key={index + logos.length * 4}
-            className="relative mx-4 h-12 w-12 sm:h-16 sm:w-16 md:h-16 md:w-16 lg:h-18 lg:w-18"
+            className="relative mx-4 lg:mx-8 h-12 w-12 sm:h-16 sm:w-16 md:h-16 md:w-16 lg:h-18 lg:w-18"
           >
             <Image
               src={logo.small}
