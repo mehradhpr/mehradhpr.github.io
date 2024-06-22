@@ -35,7 +35,7 @@ export default function Home() {
     );
   }
   return (
-    <div className="flex flex-col items-center border-none min-h-screen w-screen rounded-none mx-auto overflow-hidden">
+    <div className="flex flex-col items-center border-none min-h-screen w-screen rounded-none mx-auto overflow-hidden mb-16">
       <div className="min-[830px]:flex min-[830px]:items-center min-[830px]:mr-auto max-[830px]:flex max-[830px]:flex-col">
         <ParticleImageComponent />
         <About />

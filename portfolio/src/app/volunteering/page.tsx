@@ -10,7 +10,7 @@ const Volunteering = () => {
       <section className="p-20 min-[830px]:p-28">
         <h1 className="text-2xl text-title tracking-widest min-[830px]:text-3xl">Volunteering</h1>
       </section>
-      <section className="flex flex-col gap-10 min-[830px]:gap-16 w-full items-center justify-center">
+      <section className="flex flex-col gap-10 min-[830px]:gap-16 w-full items-center justify-center min-[1400px]:grid min-[1400px]:grid-cols-2 min-[1400px]:max-w-[1400px]">
         <div className="border border-orange-500 bg-gradient-to-r from-gray1 to-gray2 p-4 rounded-xl w-full max-w-[400px] min-[830px]:max-w-[600px]">
           <div className="flex text-xl text-orange-500 justify-between bg-gray2 p-1 rounded-lg shadow-4xl min-[830px]:text-2xl">
             <div>Digitized</div>

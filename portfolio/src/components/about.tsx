@@ -86,7 +86,7 @@ const About = () => {
         />
       </div>
       <Link href="/contact" className="p-2 rounded-md">
-        <div className="px-4 py-1 bg-gradient-to-r from-blue to-pink size-fit text-title rounded-lg shadow-lg hover:bg-blue cursor-pointer transition-colors duration-300 ml-auto">
+        <div className="px-4 py-1 bg-gradient-to-r from-blue to-pink lg:text-xl  size-fit text-title rounded-lg shadow-lg hover:from-green-500 hover:to-blue cursor-pointer transition-all duration-300 ml-auto">
           Get in Touch
         </div>
       </Link>

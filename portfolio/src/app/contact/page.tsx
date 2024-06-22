@@ -6,10 +6,15 @@ const Contact = () => {
       <section className="p-20 min-[830px]:p-28">
         <h1 className="text-2xl text-title tracking-widest min-[830px]:text-3xl">Contact</h1>
       </section>
+
       <div className="border border-pink bg-gradient-to-r from-gray1 to-gray2 p-4 rounded-xl w-full max-w-[400px] min-[830px]:max-w-[600px]">
         <div className="flex text-xl text-pink flex-row justify-between bg-gray2 p-1 mb-4 rounded-lg shadow-4xl min-[830px]:text-2xl">
           <div>Send an Email</div>
         </div>
+        <p className="mb-4 text-sm text-content min-[830px]:text-base">
+          Feel free to reach out to me for collaboration, project inquiries, or job offers! I
+          typically respond within 1-2 business days.
+        </p>
         <div>
           <form className="flex flex-col gap-4">
             <input
@@ -22,6 +27,11 @@ const Contact = () => {
               placeholder="Your Email"
               className="border border-gray-500 p-2 rounded-lg min-[830px]:p-3"
             />
+            <input
+              type="text"
+              placeholder="Subject"
+              className="border border-gray-500 p-2 rounded-lg min-[830px]:p-3"
+            />
             <textarea
               placeholder="Your Message"
               className="border border-gray-500 p-2 rounded-lg min-[830px]:p-3 h-32 min-[830px]:h-48"
@@ -29,10 +39,6 @@ const Contact = () => {
             <button className="bg-blue text-white p-2 rounded-lg min-[830px]:p-3">Send</button>
           </form>
         </div>
-        <p className="mt-4 text-sm text-content min-[830px]:text-base">
-          Feel free to reach out to me for collaboration, project inquiries, or job offers! I
-          typically respond within 1-2 business days.
-        </p>
       </div>
     </div>
   );
